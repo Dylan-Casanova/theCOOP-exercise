@@ -1,13 +1,19 @@
 import React from "react";
 import styled from 'styled-components'
+import './header.css'
 
 const Title = styled.h1`
-font-size:1.5em;
+font-size:2.5em;
 text-align: center;
 font-family: 'Courgette', cursive;
+color:rgb(251,72,124);
+padding-top: 4%
 `;
 const Instructions = styled.p`
-text-align: center
+text-align: center;
+color:white;
+margin-bottom:2%,
+padding-top:5%
 `
 // creating header which will always render.
 const Header = () => {
@@ -20,7 +26,7 @@ const Header = () => {
           </Title>
           <Instructions>
             <p>
-            Use search bar to find employees by name. If you want to sort the employees by their information, click the arrows by the column name
+            Use search bar below to find employees by their name.
             </p>
             </Instructions> 
         </header>

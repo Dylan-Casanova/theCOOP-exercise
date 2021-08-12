@@ -4,9 +4,7 @@ import "ag-grid-community/dist/styles/ag-grid.css";
 import "ag-grid-community/dist/styles/ag-theme-balham.css";
 import employees from "../../employees.json";
 
-
-
-
+//  creating table to hold Json file (employees)
 class Table extends React.Component {
   constructor(props) {
     super(props);
@@ -21,6 +19,7 @@ class Table extends React.Component {
       searchbox: "",
     };
   }
+//  Function that will get the user's input value from search box and look for any matches coming from the state
   handleChange = (event) => {
     const value = event.target.value;
     this.setState({ ...this.state, searchbox: value });
@@ -37,10 +36,11 @@ class Table extends React.Component {
     return (
         
       <div 
-        className="ag-theme-balham container "
+        className="ag-theme-balham container"
         style={{
           width: 300,
-          height: 170,
+          height: 180,
+          marginTop:'3%'
           
         }}
       >
